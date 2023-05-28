@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Page</title>
+</head>
+<body>
+  <h2>Registration</h2>
+  <form action="process_registration.php" method="POST">
+    <label for="order_id">Order ID:</label>
+    <input type="text" id="order_id" name="order_id" value="XB120" readonly><br><br>
+    
+    <label for="to">To:</label>
+    <input type="text" id="to" name="to" required><br><br>
+    
+    <label for="from">From:</label>
+    <input type="text" id="from" name="from" required><br><br>
+    
+    <label for="quantity">Quantity:</label>
+    <select id="quantity" name="quantity">
+      <option value="1">1 ton</option>
+      <option value="2">2 tons</option>
+      <option value="3">3 tons</option>
+    </select><br><br>
+    
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" value="" readonly><br><br>
+    
+    <label for="transporter">Transporter:</label>
+    <select id="transporter" name="transporter">
+      <option value="transporter1">Transporter 1</option>
+      <option value="transporter2">Transporter 2</option>
+      <option value="transporter3">Transporter 3</option>
+    </select><br><br>
+    
+    <input type="submit" value="Register">
+  </form>
+  <p>if you have an account? <a href="login.html">Login here</a>.</p>
+</body>
+</html>
